@@ -1,0 +1,159 @@
+:root{
+  /*color*/
+  --DarkCyan-Primary: hsl(158, 36%, 37%);
+  --Cream-Primary: hsl(30, 38%, 92%);
+  --VeryDarkBlue-Neutral: hsl(212, 21%, 14%);
+  --DarkGrayishBlue-Neutral: hsl(228, 12%, 48%);
+  --White-Neutral: hsl(0, 0%, 100%)  ;
+    /*Font*/
+    --fontFamily-Primary:"Montserrat", sans-serif;
+    --fontWeights-Primary1:500;
+    --fontWeights-Primary2:700;
+    --fontFamily-Neutral:"Fraunces",sans-serif;
+    
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--Cream-Primary);
+  min-height: 100vh;
+    display: grid;
+  place-items: center;
+}
+.container{
+  max-width: 600px;  
+  background-color: var(--White-Neutral);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+    .img-desk{
+      width: 250px;
+        height: 100%;
+      }
+      .imag-mobil{
+        display: none;
+          }
+
+.card-text{
+margin: 20px;
+width: 250px;
+height: 100%;
+padding: 10px;
+}
+
+.logo{
+  color: var(--DarkGrayishBlue-Neutral);
+  font-family: var(--fontFamily-Primary);
+  font-weight: var(--fontWeights-Primary1);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+
+}
+
+.titel{
+  margin-top: 20px;
+  color: var(--VeryDarkBlue-Neutral);
+  font-family: var(--fontFamily-Neutral);
+  font-weight: var(--fontWeights-Primary2);
+  font-size: 2rem;
+}
+
+
+
+
+.text{
+  margin-top: 20px;
+  color: var(--DarkGrayishBlue-Neutral);
+  font-family: var(--fontFamily-Primary);
+  font-weight: var(--fontWeights-Primary1);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+
+.prix{
+  margin-top: 10px;
+  color: var(--DarkCyan-Primary);
+  font-family: var(--fontFamily-Neutral);
+  font-weight: var(--fontWeights-Primary2);
+  font-size: 2rem;
+  display: flex;
+  margin-bottom: 20px;
+  
+}
+
+.prix span{
+  color: var(--DarkGrayishBlue-Neutral);
+  font-family: var(--fontFamily-Primary);
+  font-weight: var(--fontWeights-Primary1);
+  font-size: 13px;  
+  text-decoration: line-through;
+   padding: 15px;
+  }
+
+  button{
+    background-color:var(--DarkCyan-Primary);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    color: var(--White-Neutral);
+    font-weight: var(--fontWeights-Primary2);
+  }
+
+   
+   
+   
+  @media screen and (max-width: 550px) {
+    .img-desk{
+      display: none;
+      }
+      .imag-mobil{
+      display: block;
+        width: 100%;
+       
+          }
+          .card-text{
+            width: 100%;
+             
+            }
+            .container{
+              max-width: 900px;  
+              background-color:var(--White-Neutral);
+               display: block;
+               margin: 20px 10px;
+            }
+  
+  }
+
+
+
+     
+     
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  svg{
+    margin-right:10px ;
+  }
+
