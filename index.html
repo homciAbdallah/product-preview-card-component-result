@@ -15,9 +15,18 @@
 <body>
   <div class="container">
     <div class="card-imag">
-      <img class="imag-mobil" src="./images/image-product-mobile.jpg" alt="image-product-mobile">
-      <img class="img-desk" src="./images/image-product-desktop.jpg" alt="image-product-desktop">
 
+      <picture>
+        <source media="(max-width: 550px)" srcset="./images/image-product-mobile.jpg">
+        <source media="(min-width: 551px)" srcset="./images/image-product-desktop.jpg">
+        <img src="/images/image-product-desktop.jpg" alt="image-product">
+      </picture>
+
+<!--
+  <img class="imag-mobil" src="./images/image-product-mobile.jpg" alt="image-product-mobile">
+  <img class="img-desk" src="./images/image-product-desktop.jpg" alt="image-product-desktop">
+-->
+    
     </div>
       <div class="card-text">
       <p class="logo">Perfume</p>
